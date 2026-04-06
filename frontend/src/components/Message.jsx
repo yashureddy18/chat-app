@@ -16,7 +16,7 @@ const Message = ({ message, currentUserId, onPin, onDelete }) => {
       </div>
       
       <div className="message-bubble">
-        {message.isPinned && !message.isDeletedForEveryone && (
+        {!!message.isPinned && !message.isDeletedForEveryone && (
           <div className="pin-indicator">
             <Pin size={10} /> Pinned
           </div>
