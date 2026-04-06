@@ -5,7 +5,7 @@ import { Send, LogOut } from 'lucide-react';
 import Message from './Message';
 
 // Configure the backend URL based on environment. For local dev:
-const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || 'http://localhost:3001';
+const BACKEND_URL = 'https://chat-app-production-a77e.up.railway.app';
 
 const Chat = ({ user, onLogout }) => {
   const [messages, setMessages] = useState([]);
