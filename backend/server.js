@@ -16,6 +16,11 @@ const io = new Server(server, {
     }
 });
 
+// Health check route
+app.get("/", (req, res) => {
+  res.send("Backend is running 🚀");
+});
+
 // REST endpoints are good for initial fetch. We will use sockets for real-time.
 app.get('/messages', (req, res) => {
     const userId = req.query.userId;
